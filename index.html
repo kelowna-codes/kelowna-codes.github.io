@@ -1,1 +1,321 @@
-<h1>Hello Kelowna!</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kelowna Codes - Teaching Students to Code Like Engineers</title>
+    <script src="hackerText.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your external CSS file -->
+    <style>
+      /* Basic styling to give the website structure */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0593b2;
+        color: white;
+        padding: 20px;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .hero {
+        background: url("hero5.png") no-repeat center center/cover;
+        text-align: center;
+        color: white;
+        padding: 100px 0;
+      }
+      .hero h2 {
+        font-size: 2.5em;
+      }
+      .hero p {
+        font-size: 1.2em;
+        margin: 20px 0;
+      }
+      .cta-button {
+        padding: 15px 30px;
+        background-color: #264653;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+      }
+      .cta-button:hover {
+        background-color: #0593b2;
+      }
+      section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .programs,
+      .testimonials,
+      .contact {
+        background-color: #fff;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .programs h2,
+      .testimonials h2,
+      .contact h2 {
+        color: #0593b2;
+      }
+      .programs-list,
+      .testimonials-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .programs-list li,
+      .testimonials-list li {
+        padding: 10px 0;
+      }
+      footer {
+        background-color: #264653;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .social-media-icons a {
+        margin: 0 10px;
+        color: white;
+        font-size: 1.5em;
+      }
+      .social-media-icons a:hover {
+        color: #2a9d8f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kelowna Codes</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- <div id="text">Mess with the best, die like the rest</div> -->
+
+    <section class="hero" style="display: flex; flex-direction: column">
+      <div
+        style="
+          width: 100%;
+          position: relative;
+          padding: 16px 0;
+          max-width: 600px;
+          margin: 0 auto;
+        "
+      >
+        <div style="z-index: 3; position: relative">
+          <h2
+            id="hero-text"
+            style="margin: 0; font-family: Courier; padding: 0px 8px"
+          >
+            Code Like an Engineer. Build Your Future Today.
+          </h2>
+        </div>
+        <div
+          style="
+            left: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+            border-radius: 8px 8px 0px 0px;
+          "
+        ></div>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          position: relative;
+          padding: 8px 0;
+          max-width: 600px;
+          margin: 0 auto;
+        "
+      >
+        <div style="z-index: 3; position: relative">
+          <p
+            id="hero-subtext"
+            style="margin: 0; font-family: Courier; padding: 0px 8px"
+          >
+            Join Kelowna's youth coding revolution! Learn to solve problems,
+            think critically, and create cutting-edge projects.
+          </p>
+        </div>
+        <div
+          style="
+            left: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+            border-radius: 0px 0px 8px 8px;
+          "
+        ></div>
+      </div>
+      <a
+        id="hero-cta"
+        href="#programs"
+        class="cta-button"
+        style="margin: 24px auto; font-family: Courier"
+        >Start Building</a
+      >
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <h2>About Kelowna Codes</h2>
+        <p>
+          At Kelowna Codes, we empower high school students to think and code
+          like engineers. Our hands-on programs teach coding, problem-solving,
+          and design skills in a fun, collaborative environment. Whether you're
+          a beginner or already familiar with coding, we have the perfect
+          program to help you build real-world projects and prepare for the
+          future!
+        </p>
+      </div>
+    </section>
+
+    <section id="programs" class="programs">
+      <h2>Our Programs</h2>
+      <p>
+        Every program includes deploying what you've built to the real world,
+        and starting your own github code portfolio. Employers and undergrad
+        applications love this! <br /><br />Each program is available as a
+        premade module, but we highly recommend tailoring them to the specific
+        coder. Learn engineer-caliber skills while building something fun.
+      </p>
+      <ul class="programs-list" style="padding-bottom: 16px">
+        <li>
+          <strong>Web Site Development (Ages 13-18):</strong> Learn HTML, CSS,
+          JavaScript, and build your first website.
+        </li>
+        <li>
+          <strong>Web App Development (Ages 14-18):</strong> Create your own
+          apps using React, Javascript, and HTML. Choose from a preset selection
+          of apps to create, or brainstorm your own idea!
+        </li>
+        <li>
+          <strong>Game Development (Ages 15-18):</strong> Build your own video
+          games with Javascript, React and Node, and host them online!
+        </li>
+        <li>
+          <strong>Robotics & Engineering Challenges (Ages 16-18):</strong> FIRST
+          tech challenge available by request.
+        </li>
+      </ul>
+      <a href="#contact" class="cta-button">Sign Up Now</a>
+    </section>
+
+    <!--     <section id="testimonials" class="testimonials">
+      <h2>Previous Projects</h2>
+      <ul class="testimonials-list">
+        <li>
+          Hot Ones challenge tracker. HTML/React tracking 
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+    </section> -->
+    <section id="instructors" class="testimonials">
+      <h2>Instructors</h2>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          align-items: center;
+        "
+      >
+        <img src="passphotosmall.jpg" height="200" width="200" />
+        <div>
+          A Software Engineer with 10+ years industry experience. Worked in big
+          tech & startups. Graduate of University of Waterloo Software
+          Engineering 2015. STEM Tutor for 2+ years. FIRST Robotics Alumni.
+          <a href="https://www.adamsalcove.ca/">Personal Site</a>.
+          <a href="https://www.linkedin.com/in/adam-sils-19702a81/">LinkedIn</a
+          >.
+        </div>
+      </div>
+      <div style="margin-top: 24px; font-style: italic">
+        When I was in high school, a combination of FIRST robotics, a coding
+        camp called Real Programming 4 Kids, and my engineer parents combined
+        with my love of video games to convince me to get seriously into coding.
+        The result was a lifelong career of fullfilment, financial stability,
+        and above all, <b>CODE</b>. <br />
+        <br />
+        At Kelowna Codes, I want to give your kids the same experience. If your
+        child likes technology in any way, the potential to unlock their love of
+        code is there.
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Online registration is currently being set up! For now, please email
+        silsadam@gmail.com for inquiries. We'll set up a quick phone call to
+        discuss your child & potential program, and go from there.
+      </p>
+      <!-- <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form> -->
+    </section>
+
+    <footer>
+      <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank">F</a>
+        <a href="https://instagram.com" target="_blank">I</a>
+        <a href="https://twitter.com" target="_blank">T</a>
+        <a href="https://linkedin.com" target="_blank">L</a>
+      </div>
+      <p>&copy; 2025 Kelowna Codes | v1.0</p>
+    </footer>
+    <script>
+      hackText("hero-text", 1, 10);
+      hackText("hero-subtext", 2, 5);
+      hackText("hero-cta", 5, 20);
+    </script>
+  </body>
+</html>
